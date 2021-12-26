@@ -1,0 +1,101 @@
+.footer {
+    &__bottom {
+        background-color: $black;
+    }
+
+    &__subscribe {
+        background: url('../img/backstagegrey.png'),
+            url('../img/backstage.png') no-repeat center;
+        background-size: cover;
+        min-height: 448px;
+    }
+
+    &__top {
+        min-height: 448px;
+        @include flex-center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    &__desc,
+    &__form {
+        margin-top: 97px;
+        text-align: center;
+    }
+
+    &__quote {
+        @include font(20px);
+        text-align: center;
+        width: 360px;
+        min-height: 100px;
+    }
+
+    &__title {
+        font-weight: bold;
+        @include font(24px, 40px);
+        text-transform: uppercase;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__text {
+        @include font(18px, 30px);
+        margin: 0 0 32px 0;
+        text-transform: uppercase;
+    }
+
+    &__form-submit {
+        display: flex;
+    }
+
+    &__form-input {
+        width: 220px;
+        min-height: 49px;
+        border: 1px solid transparent;
+        border-radius: 40px 0 0 40px;
+        font-size: 14px;
+        line-height: 17px;
+        background-color: $grey-inp;
+    }
+
+    &__form-button {
+        width: 100px;
+        min-height: 49px;
+        border: 1px solid transparent;
+        border-radius: 0 40px 40px 0;
+        cursor: pointer;
+        background-color: $pink-text;
+        color: $white-text;
+    }
+
+    &__bottom {
+        min-height: 79px;
+    }
+
+    &__bottom-group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__bottom-copy {
+        color: $white-text;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 30px 0;
+        margin: 0;
+    }
+
+    &__bottom-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__bottom-item {
+        margin: 0 7px 0 0;
+    }
+
+}
