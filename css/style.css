@@ -151,13 +151,6 @@ body {
   font-style: normal;
 }
 
-.container {
-  max-width: 1160px;
-  padding: 0 10px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -169,6 +162,22 @@ body {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 1599px) {
+  .container {
+    width: 92%;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 91%;
+  }
 }
 
 .header {
@@ -213,11 +222,15 @@ body {
 .header__link {
   margin: 0 0 0 33px;
 }
+@media (max-width: 767px) {
+  .header__link {
+    display: none;
+  }
+}
 .header__wrp {
   display: flex;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   min-height: 75px;
 }
 .header__menu {
@@ -228,6 +241,18 @@ body {
   display: flex;
   margin: 75px 0 63px;
 }
+@media (max-width: 1599px) {
+  .brand__img {
+    width: 50%;
+    height: 368px;
+    object-fit: cover;
+  }
+}
+@media (max-width: 767px) {
+  .brand__img {
+    display: none;
+  }
+}
 .brand__title-wrp {
   display: flex;
   align-items: center;
@@ -235,13 +260,35 @@ body {
   background-color: #F1E4E6;
   flex-grow: 1;
 }
+@media (max-width: 1599px) {
+  .brand__title-wrp {
+    width: 50%;
+    min-height: 368px;
+  }
+}
 .brand__title {
+  text-transform: uppercase;
+  color: #222222;
   font-size: 48px;
   line-height: 58px;
   font-weight: 900;
   font-style: normal;
-  color: #222222;
-  text-transform: uppercase;
+}
+@media (max-width: 1599px) {
+  .brand__title {
+    font-size: 44px;
+    line-height: 53px;
+    font-weight: 900;
+    font-style: normal;
+  }
+}
+@media (max-width: 767px) {
+  .brand__title {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 900;
+    font-style: normal;
+  }
 }
 .brand__sub-title {
   display: block;
@@ -250,18 +297,28 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+@media (max-width: 1599px) {
+  .brand__sub-title {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+@media (max-width: 767px) {
+  .brand__sub-title {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
 .brand__sub-title-pink {
   color: #F16D7F;
 }
 
 .sales {
-  margin-bottom: 0;
-}
-.sales__list {
-  display: flex;
-  flex-wrap: wrap;
-  list-style-type: none;
-  padding: 0;
+  margin-bottom: 0px;
 }
 .sales__item {
   width: 360px;
@@ -269,7 +326,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 20px 30px 0;
+  gap: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1599px) {
+  .sales__item {
+    width: 33%;
+    min-height: 168px;
+  }
+}
+@media (max-width: 767px) {
+  .sales__item {
+    width: 100%;
+    min-height: 247px;
+  }
+}
+.sales__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .sales__item-woman {
   background-image: url(../img/sales-woman.jpg);
@@ -289,6 +365,11 @@ body {
   min-height: 180px;
   background-repeat: no-repeat;
   margin-bottom: 0;
+}
+@media (max-width: 1599px) {
+  .sales__item-shoes {
+    min-height: 116px;
+  }
 }
 
 .products {
@@ -407,10 +488,9 @@ body {
 .footer__top {
   min-height: 448px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
+  align-items: baseline;
 }
 .footer__desc, .footer__form {
   margin-top: 97px;
@@ -421,18 +501,17 @@ body {
   line-height: 24px;
   font-weight: 400;
   font-style: normal;
-  text-align: center;
   width: 360px;
   min-height: 100px;
+  margin: 32px 0 0 0;
 }
 .footer__title {
   font-weight: bold;
   font-size: 24px;
-  line-height: 40px;
-  font-weight: 400;
+  line-height: 38px;
+  font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
-  text-align: center;
   margin: 0;
 }
 .footer__text {
@@ -440,14 +519,14 @@ body {
   line-height: 30px;
   font-weight: 400;
   font-style: normal;
-  margin: 0 0 32px 0;
   text-transform: uppercase;
+  margin: 0 0 32px 0;
 }
 .footer__form-submit {
   display: flex;
 }
 .footer__form-input {
-  width: 220px;
+  width: 256px;
   min-height: 49px;
   border: 1px solid transparent;
   border-radius: 40px 0 0 40px;
@@ -484,6 +563,7 @@ body {
   list-style-type: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 .footer__bottom-item {

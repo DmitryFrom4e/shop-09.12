@@ -46,15 +46,19 @@
 
     &__link {
         margin: 0 0 0 33px;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__wrp {
-        @include flex-center;
-        justify-content: space-between;
+        @include flex-between;
         min-height: 75px;
     }
 
     &__menu {
         display: none;
     }
+
 }

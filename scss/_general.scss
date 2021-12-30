@@ -9,13 +9,6 @@ body {
     @include font(22px, 24px);
 }
 
-.container {
-    max-width: 1160px;
-    padding: 0 10px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -27,4 +20,19 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+
+.container {
+    max-width: 1140px;
+    // padding: 0 10px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include tablet {
+        width: 92%;
+    }
+
+    @include mobile {
+        width: 91%;
+    }
 }
