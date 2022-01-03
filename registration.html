@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <title>Registration</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrp header__sticky"> 
+                <div>
+                    <img class="header__logo" src="./img/logo.svg" alt="logo">
+                    <img class="header__search" src="./img/loupe.svg" alt="loupe">
+                </div>
+                <div class="header__nav-group">
+                    <button class="header__button" type="button">
+                        <svg width="32" height="23" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z"/>
+                            </svg>
+                    </button>
+                    <a class="header__link" href="#"><img src="./img/person.svg" alt="person"></a>
+                    <a class="header__link" href="#"><img src="./img/basket.svg" alt="basket"></a>
+                </div>
+            </div>  
+            <nav class="header__menu">
+                <h2 class="header__menu-title">menu</h2>
+                <ul class="header__menu-list">
+                    <li class="header__menu-item menu-sub-item">
+                        <h3 class="menu-sub-item__title">man</h3>
+                        <ul class="menu-sub-item__list">
+                            <li><a class="menu-sub-item__item-link" href="#">Accessories</a></li>
+                            <li><a class="menu-sub-item__item-link" href="#">Bags</a></li>
+                            <li><a class="menu-sub-item__item-link" href="#">Denim</a></li>
+                            <li><a class="menu-sub-item__item-link" href="#">T-Shirts</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item menu-sub-item">
+                        <h3 class="menu-sub-item__title">woman</h3>
+                        <ul class="menu-sub-item__list">
+                            <li><a class="menu-sub-item__item-link" href="#">Accessories</a></li>
+                            <li><a class="menu-sub-item__item-link" href="#">Jackets & Coats</a></li>
+                            <li><a class="menu-sub-item__item-link" href="#">Polos</a></li>
+                            <li><a class="menu-sub-item__item-link" href="#">T-Shirts</a></li>
+                            <li><a class="menu-sub-item__item-link" href="#">Shirts</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__menu-item menu-sub-item">
+                        <h3 class="menu-sub-item__title">kids</h3>
+                        <ul class="menu-sub-item__list">
+                            <li><a class="menu-sub-item__item-link" href="#">Accessories</a></li>
+                            <li><a class="menu-sub-item__item-link" href="#">Jackets & Coats</a></li>
+                            <li><a class="menu-sub-item__item-link" href="#">Polos</a></li>
+                            <li><a class="menu-sub-item__item-link" href="#">T-Shirts</a></li>
+                            <li><a class="menu-sub-item__item-link" href="#">Shirts</a></li>
+                            <li><a class="menu-sub-item__item-link" href="#">Bags</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="main__title container">registration</h1>
+        <section>
+            <form action="#">
+                <fieldset>
+                    <legend>Your Name</legend>
+                    <div>
+                        <label>
+                            <input type="text" placeholder="name">
+                            <span class="visually-hidden">first name</span>
+                        </label>
+                    </div>
+                    <input type="text">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__top container">
+            <div class="footer__desc">
+                <img class="footer__icon" src="./img/face.jpg" width="96" height="96" alt="face">
+                <p class="footer__quote">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+            </div>
+            <div class="footer__form">
+                <h3 class="footer__title">subscribe</h3>
+                <p class="footer__text">for our newletter and promotion</p> 
+                <form action="#">
+                    <input type="text" placeholder="Enter Your Email">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    <div class="footer__bottom">
+        <div class="container">
+            <p class="footer__bottom-copy icons-center">© 2021  Brand  All Rights Reserved.</p>
+            <ul class="footer__bottom-list icons-center">
+                <li class="footer__bottom-item">
+                    <a href="#"><img src="./img/facebook.jpg" alt="facebbok"></a>
+                </li>
+                <li class="footer__bottom-item">
+                    <a href="#"><img src="./img/instagram.jpg" alt="instragram"></a>
+                </li>
+                <li class="footer__bottom-item">
+                    <a href="#"><img src="./img/pinterest.jpg" alt="pinterest"></a>
+                </li>
+                <li class="footer__bottom-item">
+                    <a href="#"><img src="./img/twitter.jpg" alt="twitter"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

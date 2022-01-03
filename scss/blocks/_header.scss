@@ -1,0 +1,64 @@
+.header {
+    background-color: $black;
+    width: 100%;
+    min-height: 75px;
+    position: fixed;
+
+    &__logo {
+        margin: 0 41px 0 0;
+    }
+
+    &__search {
+        position: relative;
+    }
+
+    &__wrp-logo-form {
+        display: flex;
+    }
+
+    &__search-input:hover {
+        outline: 1px solid red;
+    }
+
+    &__search:before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: red;
+        top: 13px;
+        left: 7px;
+        background-image: url('../../img/loupe.svg');
+        background-size: 10px 10px;
+    }
+
+    &__search-input {
+        padding: 10px 20px;
+        border: none;
+        outline: 1px solid $black;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+    }
+
+    &__link {
+        margin: 0 0 0 33px;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__wrp {
+        @include flex-between;
+        min-height: 75px;
+    }
+
+    &__menu {
+        display: none;
+    }
+
+}
