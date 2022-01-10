@@ -188,9 +188,12 @@ body {
 }
 .header__logo {
   margin: 0 41px 0 0;
+  transition: transform 900ms;
 }
 .header__search {
   position: relative;
+  align-self: center;
+  fill: #FFFFFF;
 }
 .header__wrp-logo-form {
   display: flex;
@@ -215,9 +218,11 @@ body {
   outline: 1px solid #222222;
 }
 .header__button {
+  fill: #FFFFFF;
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  transition: transform 900ms;
 }
 .header__link {
   margin: 0 0 0 33px;
@@ -236,6 +241,13 @@ body {
 .header__menu {
   display: none;
 }
+.header__logo:hover {
+  transform: rotate(360deg);
+}
+.header__button:hover {
+  fill: #F16D7F;
+  transform: rotate(360deg);
+}
 
 .brand {
   display: flex;
@@ -245,7 +257,6 @@ body {
   .brand__img {
     width: 50%;
     height: 368px;
-    object-fit: cover;
   }
 }
 @media (max-width: 767px) {
@@ -318,7 +329,7 @@ body {
 }
 
 .sales {
-  margin-bottom: 0px;
+  width: 100%;
 }
 .sales__item {
   width: 360px;
@@ -326,13 +337,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (max-width: 1599px) {
   .sales__item {
-    width: 33%;
+    width: 30%;
     min-height: 168px;
   }
 }
@@ -342,10 +352,28 @@ body {
     min-height: 247px;
   }
 }
+.sales__item-title {
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.sales__item-text {
+  color: #F16D7F;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
 .sales__list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 .sales__item-woman {
   background-image: url(../img/sales-woman.jpg);
@@ -364,7 +392,6 @@ body {
   width: 100%;
   min-height: 180px;
   background-repeat: no-repeat;
-  margin-bottom: 0;
 }
 @media (max-width: 1599px) {
   .sales__item-shoes {
@@ -435,6 +462,12 @@ body {
   color: #F16D7F;
   background-color: transparent;
   cursor: pointer;
+  transition: border-radius 900ms, background-color 900ms, background-color 900ms;
+}
+.products__button-item:hover {
+  border-radius: 10px;
+  background-color: #F16D7F;
+  color: #FFFFFF;
 }
 
 .prefs {
@@ -451,7 +484,7 @@ body {
   padding: 104px 0;
 }
 .prefs__item {
-  max-width: 350px;
+  max-width: 360px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -459,6 +492,7 @@ body {
 }
 .prefs__item-icon {
   fill: #F16D7F;
+  margin: 0 0 19px 0;
 }
 .prefs__item-title {
   color: #FFFFFF;
@@ -467,6 +501,7 @@ body {
   font-weight: 400;
   font-style: normal;
   text-transform: capitalize;
+  margin: 0 0 16px 0;
 }
 .prefs__item-text {
   color: #9F9F9F;
@@ -488,7 +523,7 @@ body {
 .footer__top {
   min-height: 448px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   align-items: baseline;
 }
@@ -532,16 +567,20 @@ body {
   border-radius: 40px 0 0 40px;
   font-size: 14px;
   line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
   background-color: #E1E1E1;
+  padding-left: 22px;
 }
 .footer__form-button {
   width: 100px;
   min-height: 49px;
-  border: 1px solid transparent;
+  border: 1px solid #F16D7F;
   border-radius: 0 40px 40px 0;
   cursor: pointer;
-  background-color: #F16D7F;
-  color: #FFFFFF;
+  background-color: #FFFFFF;
+  color: #F16D7F;
+  transition: background-color 900ms, color 900ms;
 }
 .footer__bottom {
   min-height: 79px;
@@ -556,6 +595,8 @@ body {
   color: #FFFFFF;
   font-size: 16px;
   line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
   padding: 30px 0;
   margin: 0;
 }
@@ -572,9 +613,21 @@ body {
   text-align: center;
   color: #222222;
   font-size: 20px;
+  transition: background-color 900ms, color 900ms;
 }
 .footer__bottom-item:not(:last-child) {
   margin: 0 7px 0 0;
+}
+.footer__bottom-item:hover {
+  background-color: #F16D7F;
+  color: #FFFFFF;
+}
+.footer__form-input:hover {
+  border-color: #F16D7F;
+}
+.footer__form-button:hover {
+  background-color: #F16D7F;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */

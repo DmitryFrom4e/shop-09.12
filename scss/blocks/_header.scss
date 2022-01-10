@@ -6,10 +6,13 @@
 
     &__logo {
         margin: 0 41px 0 0;
+        transition: transform 900ms;
     }
 
     &__search {
         position: relative;
+        align-self: center;
+        fill: $white-text;
     }
 
     &__wrp-logo-form {
@@ -39,9 +42,11 @@
     }
 
     &__button {
+        fill: $white-text;
         background-color: transparent;
         border: 0;
         cursor: pointer;
+        transition: transform 900ms;
     }
 
     &__link {
@@ -59,6 +64,15 @@
 
     &__menu {
         display: none;
+    }
+
+    &__logo:hover {
+        transform: rotate(360deg);
+    }
+
+    &__button:hover {
+        fill: $pink-text;
+        transform: rotate(360deg);
     }
 
 }

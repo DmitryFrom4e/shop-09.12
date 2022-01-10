@@ -11,19 +11,21 @@
     }
 
     &__item {
-        max-width: 350px;
+        max-width: 360px;
         @include flex-center;
         flex-direction: column;
     }
 
     &__item-icon {
         fill: $pink-text;
+        margin: 0 0 19px 0;
     }
 
     &__item-title {
         color: $white-text;
         @include font(20px);
         text-transform: capitalize;
+        margin: 0 0 16px 0;
     }
 
     &__item-text {

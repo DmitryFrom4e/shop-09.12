@@ -1,18 +1,17 @@
 .sales {
-    margin-bottom: 0px;
+
+    width: 100%;
 
     &__item {
         width: 360px;
         min-height: 260px;
 
         @include flex-center;
-        // margin: 0 30px 30px 0;
-        gap: 30px;
         background-repeat: no-repeat;
         background-size: cover;
 
         @include tablet {
-            width: 33%;
+            width: 30%;
             min-height: 168px;
         }
 
@@ -22,10 +21,22 @@
         }
     }
 
+    &__item-title {
+        color: $white-text;
+        @include font(16px, 19px);
+        text-transform: uppercase;
+    }
+
+    &__item-text {
+        color: $pink-text;
+        @include font(24px, 29px, 700);
+        text-transform: uppercase;
+    }
+
     &__list {
-        display: flex;
+        @include flex-between;
         flex-wrap: wrap;
-        justify-content: space-between;
+        gap: 30px;
     }
 
     &__item-woman {
@@ -48,7 +59,6 @@
         width: 100%;
         min-height: 180px;
         background-repeat: no-repeat;
-        margin-bottom: 0;
 
         @include tablet {
             min-height: 116px;

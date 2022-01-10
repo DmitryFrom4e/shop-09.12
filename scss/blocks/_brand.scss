@@ -6,7 +6,7 @@
         @include tablet {
             width: 50%;
             height: 368px;
-            object-fit: cover;
+            // object-fit: cover;
         }
 
         @include mobile {
@@ -58,43 +58,4 @@
         color: $pink-text;
     }
 
-    // @media (max-width: 1599px) {
-    //     &__img {
-    //         width: 50%;
-    //         height: 368px;
-    //         object-fit: cover;
-    //     }
-
-    // &__title-wrp {
-    //     width: 50%;
-    //     min-height: 368px;
-    // }
-
-    // &__title {
-    //     @include font(44px, 53px, 900);
-    //     text-transform: uppercase;
-    //     color: $black;
-    // }
-
-    // &__sub-title {
-    //     @include font(24px, 29px, 700);
-    // }
-
-    // }
-
-    // @media (max-width: $mobile-width) {
-    //     &__img {
-    //         display: none;
-    //     }
-
-    // &__title {
-    //     @include font(38px, 46px, 900);
-    //     text-transform: uppercase;
-    //     color: $black;
-    // }
-
-    //     &__sub-title {
-    //         @include font(20px, 24px, 700);
-    //     }
-    // }
 }

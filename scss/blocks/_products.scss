@@ -70,5 +70,13 @@
         color: $pink-text;
         background-color: transparent;
         cursor: pointer;
+        transition: border-radius 900ms, background-color 900ms, background-color 900ms;
+    }
+
+    &__button-item:hover {
+        border-radius: 10px;
+        background-color: $pink-text;
+        color: $white-text;
+        // transform: rotate(-60deg);
     }
 }
