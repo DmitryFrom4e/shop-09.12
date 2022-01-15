@@ -1,13 +1,17 @@
 .products {
-    margin-top: 97px;
+    // margin-top: 97px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-column-gap: 20px;
+    // grid-row-gap: 30px;
+
 
     &__title {
         text-align: center;
         font-size: 30px;
         line-height: 36px;
-        font-style: normal;
-        font-weight: normal;
-        margin: 0;
+        margin-top: 97px;
     }
 
     &__text {
@@ -19,22 +23,18 @@
     }
 
     &__list {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0;
+        @include flex-btwn-three;
+        gap: 30px;
     }
 
     &__item {
-        width: 350px;
+        width: 360px;
         min-height: 580px;
-        margin: 0 30px 30px 0;
         background-color: $grey-bkg;
     }
 
     &__item-img {
-        width: 350px;
+        width: 360px;
         min-height: 420px;
     }
 
@@ -47,8 +47,7 @@
 
     &__item-text {
         font-weight: 300;
-        font-size: 14px;
-        line-height: 17px;
+        @include font(14px, 17px);
         color: $grey-text;
         margin: 13px 18px 16px;
     }
@@ -62,6 +61,7 @@
 
     &__button {
         text-align: center;
+        margin-top: 49px;
     }
 
     &__button-item {
@@ -77,6 +77,5 @@
         border-radius: 10px;
         background-color: $pink-text;
         color: $white-text;
-        // transform: rotate(-60deg);
     }
 }

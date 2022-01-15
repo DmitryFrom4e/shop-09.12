@@ -109,7 +109,8 @@
         color: $white-text;
     }
 
-    &__form-input:hover {
+    &__form-input:hover,
+    &__form-input:active {
         border-color: $pink-text;
     }
 

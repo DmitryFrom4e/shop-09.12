@@ -38,3 +38,9 @@
 @mixin textup {
     text-transform: uppercase;
 }
+
+@mixin flex-btwn-three {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+}
